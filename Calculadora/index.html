@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,800&family=Kanit:ital,wght@0,400;1,700;1,900&family=Paytone+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="calculadora">
+            <h1 class="center">CALCULADORA</h1>
+            <input type="text" id="display" class="pantalla" readonly>
+            <div class="teclado">
+                <button class="boton" onclick="clearDisplay()">CLEAR</button>
+                <button class="boton" onclick="deleteLast()">←</button>
+                <button id="=" class="boton" onclick="calcular()">=</button>
+                <button id="1" class="boton" onclick="addNumber(1)">1</button>
+                <button id="2" class="boton" onclick="addNumber(2)">2</button>
+                <button id="3" class="boton" onclick="addNumber(3)">3</button>
+                <button id="4" class="boton" onclick="addNumber(4)">4</button>
+                <button id="5" class="boton" onclick="addNumber(5)">5</button>
+                <button id="6" class="boton" onclick="addNumber(6)">6</button>
+                <button id="7" class="boton" onclick="addNumber(7)">7</button>
+                <button id="8" class="boton" onclick="addNumber(8)">8</button>
+                <button id="9" class="boton" onclick="addNumber(9)">9</button>
+                <button id="0" class="boton" onclick="addNumber(0)">0</button>
+                <button id="+" class="boton" onclick="addOperator('+')">+</button>
+                <button id="-" class="boton" onclick="addOperator('-')">-</button>
+                <button id="*" class="boton" onclick="addOperator('*')">x</button>
+                <button id="/" class="boton" onclick="addOperator('/')">÷</button>
+                <button id="." class="boton" onclick="addOperator('.')">.</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
